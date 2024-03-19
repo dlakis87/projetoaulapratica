@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body { 
+background-color: bisque;
+        }
+
+        h1 {
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        p {
+            font-family:'Times New Roman', Times, serif;
+            text-align: left;
+            font-size: larger;
+    
+        }
+
+        button {
+            color: black;
+            padding: 2px;
+            background-color: pink;
+            border-radius: 3px;
+        }
+
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Pedido de pizza</h1>  
+  <p>Coloque seu nome, especifique seu pedido e depois nos envie para começarmos o preparo. 
+    <br>
+    <i>Tenha um bom dia caro cliente!</i> 
+  </p>
+  <form method="post" action="test.jsp">
+    Nome: <input type="text" name="Nome"> 
+    <button>Enviar</button> <br>
+    Email: <input type="email" name="email">
+    <button>Enviar</button>
+    <br>
+    <br>
+    Tamanho: <input type="radio" name="Tamanho" value="G"> Grande
+    <input type="radio" value="M"> Médio
+    <input type="radio" value="P"> Pequeno
+    <br>
+    <br>
+    Sabor: <select name="Sabor">
+           <option>Calabresa</option>
+           <option>Mussarela</option>
+           <option>Frango com Catupiry</option>
+           <option>Portuguesa</option>
+           <option>Quatro queijos</option>
+           <option>Romeu e Julieta</option>
+    </select>
+    <br>
+    <br>
+    Adcionais: <input type="checkbox" name="Borda" value="Sim"> Borda
+    <input type="checkbox" name="Orégano" value="Sim"> Orégano
+    <input type="checkbox" name="M&M" value="Sim"> M&M
+    <input type="checkbox" name="Cheddar" value="Sim"> Cheddar
+    <br>
+    Data de Entrega: <input type="date" name="DatadeEntrega">
+    <hr>
+    Comentário: <br> <textarea name="mensagem" rows="10" cols="30"></textarea>
+    <input type="submit" value="Enviar">
+</body>
+</html>
+
